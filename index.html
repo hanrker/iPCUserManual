@@ -1,4 +1,158 @@
-<html>
-sd
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPC用户手册</title>
+</head>
+
+<body>
+    
+    <header class="layout">
+        <h1>iPC用户手册</h1>
+    </header>
+    <div class="layout" id='nav'>
+        <UL>      
+            <!-- <a href="www.baidu.com">11</a> -->
+            <li class="hor">PC端</li>
+            <li class="hor">移动端</li>
+            <li class="hor">CAD端</li>
+            <li class="hor">自动排产</li>
+        </UL>
+    </div>
+
+    <!-- <div class="layout"> -->
+        <nav id='content' class="layout">
+            <h1>目录</h1>
+            <ul id='leftNav'>
+                <li>概览</li>
+                <li>项目管理</li>
+                <li>构件管理</li>
+                <li>计划排产</li>
+                <li>资源管理</li>
+                <li>生产管理</li>
+                <li>堆场管理</li>
+                <li>搅拌站管理</li>
+                <li>寿命期管理</li>
+                <li>系统管理</li>
+                <li>打印二维码</li>
+                <li>移动端</li>
+            </ul>
+        </nav>
+    
+        <div id='contents' class="layout">
+            <h3><img src="./pics/local.png" alt="" width="20px">
+                <span id = 'title'>概况</span>
+            </h3>
+            
+            <div id = 'neirong'>
+               
+            <p>
+                系统功能模块包含：项目管理、预制构件管理、资源管理、生产计划排产、制造执行系统、搅拌站管理、堆场管理、构件寿命周期管理、系统管理。旨在搭建预制构件工厂数字化信息平台，贯通PC工厂中构件全寿命周期，解决工厂的生产与管理活动中的问题，提高生产与管理效率，具体功能如下：
+            </p>
+            <ol>
+                <li>搭建PC构件生产项目，定义构件图纸与所需生产资源；</li>
+                <li>根据项目需求搭建项目目标，划分订单；</li>
+                <li>依据交付信息、构件信息、项目信息等制定生产规划与每日生产计划，合理安排生产，保证项目交付目标与生产任务；</li>
+                <li>根据每日生产任务与原料库存采购信息，确定生产所需物料清单，自动计算采购原料计划；
+                </li>
+                <li>根据生产工艺与生产任务，严格执行生产计划，使用移动终端快速获取生产记录与检验数据，结合生产设备数据与人员行为数据，实时掌控现场生产情况与生产数据；</li>
+                <li>使用移动终端通过扫描二维码实现构件快速准确入库与出库；</li>
+                <li>实时统计堆场出入库记录与当前库存分布情况，实现工厂空间资源合理使用；</li>
+                <li>实时追踪项目整体进度与构件具体进度，实现产品全寿命周期追踪与记录。</li>
+            </ol>
+            <img src="./pics/iPCMES/04_projectMange.png" alt="" class="img">
+
+            </div>
+           
+        </div>
+    <!-- </div> -->
+    
+
+    <footer>
+       <p>Copyright :河北新大地机电制造有限公司 && 河北盖普科技有限公司</p> 
+    </footer>
+</body>
 
 </html>
+
+<style>
+.layout{
+    /* position: absolute; */
+    display: block;
+    position: fixed;
+} 
+
+
+
+header {
+    /* background-color:black; */
+    /* color:white; */
+    text-align:left;
+    padding:1px; 
+    margin: 2px;
+    display: block;
+    top: 0%;
+
+}
+
+#nav{
+    font:22px verdana, arial, sans-serif; /* 设置文字大小和字体样式 */
+    height: 80px;
+    top: 0px;
+    right: 0px;
+}
+#nav .hor{
+    /* display: inline-flex; */
+    list-style-type:none;
+    float: left;
+    margin: 2px 2px 2px 2px;
+    background-color: rgb(218, 218, 218);
+    padding: 10px 40px 10px 40px ;
+    /* height: 4px; */
+}
+
+#content {
+    /* display: block;  */
+    line-height:30px;
+    background-color:#eeeeee;
+    height:100%;
+    width:200px;
+    /* float:left; */
+    padding:5px; 
+    top: 90px;
+    left: 0%;
+}
+
+
+#contents{
+    /* display: inline; */
+    height: 80%;
+    top: 80px;
+    left: 220px;
+
+}
+
+#neirong{
+    /* display: block; */
+    overflow-y:scroll;
+    height: 95%;
+}
+
+footer{
+    position: fixed;
+    bottom: 0%;
+    left: 35%;
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    clear:both;
+    text-align:center;
+    padding:5px;
+}
+
+.img{
+    width: 1000px;
+    
+}
+</style>
